@@ -1,19 +1,244 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AB Test Button</title>
-</head>
-<body>
-    <button id="button">Click me!</button>
+    <title>Optimizely Test</title>
+    <script src="https://cdn.optimizely.com/js/2005840447.js"></script>
+    <script type="text/javascript" src="//static.unicef.cn/public_static_h5/src/jquery-2.1.4.min.js"></script>
+<style>
+        html {
+            font-family: SF Pro SC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang SC, SegoeUI, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
 
-    <script>
-        // Add your AB test logic here
-        document.getElementById("button").addEventListener("click", function() {
-            // Code to handle button click event
-            // Add your AB test variations here
-            // For example, you can redirect to different pages or show different content
-            // based on the AB test group the user belongs to
-        });
-    </script>
-</body>
+        .wauto {
+            width: auto;
+        }
+
+        #warp {
+            margin: 0 auto;
+            color: #494848;
+        }
+
+        #main {
+
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        #main tr td:nth-child(1), #main tr td:nth-child(3) {
+            width: 485px;
+            background-color: #F7F8F8;
+        }
+
+        #main tr td:nth-child(2) {
+            width: 25px;
+            padding: 0;
+            background-color: #ccc;
+        }
+
+        td {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        td img {
+            width: 100%;
+        }
+
+        .header td {
+
+            border-bottom: 1px solid #2caeff;
+            background-color: #1cabe2 !important;
+        }
+        .add td{height:5px;padding:0px}
+        .header .t4 {
+            text-align: right;
+            font-size: 28px;
+/*            font-style: italic;*/
+            color: #2caeff;
+        }
+
+        .r1 td:nth-child(1) {
+            padding: 0px 10px 0px 0px;
+        }
+        .r1 td:nth-child(3) {
+            padding: 0px 0px 0px 10px;
+        }
+
+        .text-org {
+            color: #ff5f01;
+        }
+
+        .text-pnk {
+            color: #ff0099;
+        }
+
+        .rbtns td:nth-child(1) {
+            text-align: center;
+            padding: 12px 10px 12px 0px;
+            font-size: 20px;
+        }
+        .rbtns td:nth-child(3) {
+            text-align: center;
+            padding: 12px 0px 12px 10px;
+            font-size: 20px;
+        }
+
+        .rbtns td:nth-child(1), .rbtns td:nth-child(3) {
+            background-color: #fff !important;
+        }
+
+        .rp {
+            font-size: 16px;
+            vertical-align: top;
+            text-indent: 32px;
+        }
+
+        .strong {
+            font-weight: bold;
+            color: #000;
+            font-family: "Microsoft Yahei"
+        }
+
+        .btn-pnk {
+            color: #fff;
+            background-color: #ff0099;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 0;
+        }
+
+        .btn-pnk:visited,.btn-org:visited {
+            color: #fff;
+        }
+        .btn-org {
+            color: #fff;
+            background-color: #ff5f01;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 0;
+        }
+
+        .r5 td {
+            padding-bottom: 25px;
+
+        }
+        .r5 td a{font-size:20px}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        a:visited {
+            color: inherit;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+        }
+        .footer a {
+            color: #2caeff;
+            font-style: italic;
+        }
+        .footer a:visited {
+            color: #2caeff;
+        }
+        .img_title{
+            font-size: 14px;
+            color: #ff0099;
+            display: inline-block;
+            position: relative;
+            top:-2em;
+            left:50px;      background-color:       }
+        #title2{left:80px}
+        .header{background-color: #1cabe2}
+        .imlogo{position: relative;top:30px;width: 980px}
+        .tdf{padding-top: 0px}
+        body{margin-top: 0px;padding-top: 0px}
+    </style>
+</head>
+<body clientid="239563709.1711076500">
+<table id="warp">
+    <tbody><tr>
+        <td class="tdf">
+            <table id="main">
+                <tbody><tr class="header">
+<!--                   <td colspan="3" align="center"><img src="logo2.png" class="imlogo" ></td>-->
+                    <td><img src="" class="wauto"></td>
+                    <td></td>
+                    <td class="t4"><span style="color:#ffffff"></span></td>
+                </tr>
+                <tr class="add"><td></td><td></td><td></td></tr>
+                <tr class="r1">
+                    <!--480x375-->
+                    <td><img src="http://static.unicef.cn/201706ore/imgs/i1.png?1"></td>
+                    <td></td>
+                    <td class=""><img src="http://static.unicef.cn/201706ore/imgs/i3.png?1"></td>
+                </tr>
+                <tr class="rbtns r2">
+                    <!--480x375-->
+                    <td><a href="https://ecare.unicef.cn/cn/pledge/WB181?utm_source=&amp;utm_campaign=" target="_blank" class="btn-org" onclick="ga('send','event','2017web1','access_click','pledge-button2');dataLayer.push({'event': 'pledge-button2'});">Test_1</a></td>
+                    <td></td>
+                    <td><a href="https://ecare.unicef.cn/cn/pledge/WB182?utm_source=&amp;utm_campaign=" target="_blank" class="btn-pnk" onclick="ga('send','event','2017WB182','access_click','pledge-button2');dataLayer.push({'event': 'pledge-button2'});">Test_2</a></td>
+                </tr>
+                <tr class="rp">
+                    <!--480x375-->
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="">
+                    <!--480x375-->
+                    <td align="center"></td>
+                    <td></td>
+                    <td align="center"></td>
+                </tr>
+                <tr class="r1">
+                    <!--480x375-->
+                    <td><img src="http://static.unicef.cn/201706ore/imgs/i2.png?1"></td>
+                    <td></td>
+                    <td class=""><img src=""></td>
+                </tr>
+                <tr class="rp">
+                    <!--480x375-->
+                    <td>
+                        <p></p>
+                        <p></p>
+                        <p class="strong"></p>
+                        <p class="strong"></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>
+                            </p>
+                        <p></p>
+                        <p></p>
+                        <p class="strong"></p>
+                    </td>
+                </tr>
+                <tr class="r5">
+                    <!--480x375-->
+                    <td><a href="https://ecare.unicef.cn/cn/pledge/WB181?utm_source=&amp;utm_campaign=" target="_blank" class="btn-org" onclick="ga('send','event','2017web1','access_click','pledge-button3');dataLayer.push({'event': 'pledge-button3'});">Test_3</a></td>
+                    <td></td>
+                    <td><a href="https://ecare.unicef.cn/cn/pledge/WB182?utm_source=&amp;utm_campaign=" target="_blank" class="btn-pnk" onclick="ga('send','event','2017WB182','access_click','pledge-button3');dataLayer.push({'event': 'pledge-button3'});">Test_4</a></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td style="color:#000000;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+
+    <tr><td><hr style="border:1px #d8d1c9 solid"></td></tr>
+    <tr>
+       </tr></tbody></table><table border="0" align="center">
+    </body>
 </html>
